@@ -1,6 +1,6 @@
 # istio/istio's Issue #55623: ReferenceGrants stop working when mTLS is enabled for a Gateway Listener
 
-This is the sample repository that displays the behavior associated with istio/istio's issue #55623
+This is the sample repository that displays the behavior associated with [istio/istio's issue #55623](https://github.com/istio/istio/issues/55623)
 
 ## Environment
 
