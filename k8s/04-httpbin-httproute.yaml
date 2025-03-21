@@ -1,0 +1,21 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: httpbin
+  namespace: httpbin
+spec:
+  parentRefs:
+    - group: gateway.networking.k8s.io
+      kind: Gateway
+      name: my-gateway
+      sectionName: https-httpbin
+      namespace: istio-gateways
+  hostnames:
+    - httpbin.example.com
+  rules:
+    - backendRefs:
+        - group: ''
+          kind: Service
+          name: httpbin
+          namespace: httpbin
+          port: 8000

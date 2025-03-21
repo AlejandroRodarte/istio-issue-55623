@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-gateways
+  labels:
+    istio.io/rev: 1-25-0
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: httpbin
+  labels:
+    istio.io/rev: 1-25-0
+---
+
