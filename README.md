@@ -370,4 +370,7 @@ $ curl -v -H Host:httpbin.example.com --resolve "httpbin.example.com:$SECURE_ING
 I'm a teapot!
 ```
 
----
+## Resolution
+
+- This issue got resolved in [pull request #55859](https://github.com/istio/istio/pull/55859).
+- The fix was officially released on [version 1.26.0](https://github.com/istio/istio/releases/tag/1.26.0) of Istio.
