@@ -13,6 +13,7 @@ spec:
       tls:
         mode: Terminate
         # should work thanks to referencegrant/httpbin, but fails when mTLS is enabled
+        # update: now works in istio 1.26.0 thanks to pull request 55859
         certificateRefs:
           - group: ''
             kind: Secret
